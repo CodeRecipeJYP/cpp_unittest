@@ -14,6 +14,7 @@ public:
     ~Validator();
 
     bool isValid(const std::string& input);
+    bool isValid(const char* input);
 
 private:
     std::regex* validateRegex = nullptr;
