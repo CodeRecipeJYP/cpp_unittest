@@ -5,6 +5,7 @@
 #ifndef CPP_UNITTEST_DETECTOR_H
 #define CPP_UNITTEST_DETECTOR_H
 #include <vector>
+#include "detected_placeholder.h"
 
 class Detector {
 public:
@@ -12,6 +13,7 @@ public:
     ~Detector();
 
     std::vector<int>* detectFromQuery(const char *query);
+    std::vector<DetectedPlaceholder*>* detectFromQueryAndReturnDetectedPlaceholder(const char *query);
 };
 
 
